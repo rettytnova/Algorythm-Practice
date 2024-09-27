@@ -6,7 +6,7 @@ function solution(n, m, section) {
     // section[i]의 값에서부터 +m만큼 칠해지고 result++; -> 검색을 section[i]+m 부터 시작해야함
     let currentSection = 1; //n을 기준으로 절댓값수치로 매겨진 구역
     let i = 0; //section의 인덱스
-    while (currentSection <= n){
+    while (i < section.length){
         if(currentSection === section[i]){
             answer++;
             currentSection += m;
