@@ -7,7 +7,6 @@ function solution(babbling) {
     babbling.forEach((e) => {
         let str = e;
         let lastWordIndex = -1;
-        console.log("------e:",e);
         while(str.length){
             let isCorrect = false;
             
@@ -15,7 +14,7 @@ function solution(babbling) {
                 const matchIndex = str.indexOf(words[i]);
                 
                 if(matchIndex === 0 && lastWordIndex !== i){       
-                    str = str.slice(matchIndex + words[i].length);
+                    str = str.slice(words[i].length);
                     lastWordIndex = i;
                     isCorrect = true;                    
                     break;
