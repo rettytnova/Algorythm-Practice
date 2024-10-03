@@ -20,7 +20,7 @@ function solution(X, Y) {
         presentNumber = +maxNumberOfY;        
     }
     
-    // 이 코드의 반복문 탐색횟수는 X.length + Y.length + (presentNumber * 2)이다. 
+    // 아래 반복문의 탐색횟수는 X.length + Y.length + (presentNumber * 2)이다. 
     while(presentNumber >= 0){
         let search = true;
         
